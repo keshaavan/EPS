@@ -1,0 +1,4 @@
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\bin\Release\EPICompliance.dll
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\bin\Release\EPICompliance.pdb
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\obj\Release\EPICompliance.dll
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\obj\Release\EPICompliance.pdb

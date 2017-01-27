@@ -1,0 +1,1101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="col_Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="col_ClientReferenceLabel" xml:space="preserve">
+    <value>ClientReferenceLabel</value>
+  </data>
+  <data name="col_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="col_IsActive" xml:space="preserve">
+    <value>IsActive</value>
+  </data>
+  <data name="param_Category" xml:space="preserve">
+    <value>@Category</value>
+  </data>
+  <data name="param_ChartId" xml:space="preserve">
+    <value>@ChartId</value>
+  </data>
+  <data name="param_ChartMoreInfoId" xml:space="preserve">
+    <value>@ChartMoreInfoId</value>
+  </data>
+  <data name="param_Client" xml:space="preserve">
+    <value>@Client</value>
+  </data>
+  <data name="param_ClientProjectId" xml:space="preserve">
+    <value>@ClientProjectId</value>
+  </data>
+  <data name="param_CommentCategoryId" xml:space="preserve">
+    <value>@CommentCategoryId</value>
+  </data>
+  <data name="param_Id" xml:space="preserve">
+    <value>@Id</value>
+  </data>
+  <data name="col_Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="sp_GetClientProjects" xml:space="preserve">
+    <value>dbo.GetClientProjects</value>
+  </data>
+  <data name="col_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="col_ChartId" xml:space="preserve">
+    <value>ChartId</value>
+  </data>
+  <data name="col_ChartMoreInfoId" xml:space="preserve">
+    <value>ChartMoreInfoId</value>
+  </data>
+  <data name="col_ClientMarket" xml:space="preserve">
+    <value>ClientMarket</value>
+  </data>
+  <data name="col_ClientProjectId" xml:space="preserve">
+    <value>ClientProjectId</value>
+  </data>
+  <data name="col_ClientReference" xml:space="preserve">
+    <value>ClientReference</value>
+  </data>
+  <data name="col_CommentCategoryId" xml:space="preserve">
+    <value>CommentCategoryId</value>
+  </data>
+  <data name="col_Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="col_CompletionDate" xml:space="preserve">
+    <value>CompletionDate</value>
+  </data>
+  <data name="col_CorrectedValue" xml:space="preserve">
+    <value>CorrectedValue</value>
+  </data>
+  <data name="col_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="col_DisplayOrder" xml:space="preserve">
+    <value>DisplayOrder</value>
+  </data>
+  <data name="col_EmployeeId" xml:space="preserve">
+    <value>EmployeeId</value>
+  </data>
+  <data name="col_ErrorCategoryId" xml:space="preserve">
+    <value>ErrorCategoryId</value>
+  </data>
+  <data name="col_ErrorSubCategoryId" xml:space="preserve">
+    <value>ErrorSubCategoryId</value>
+  </data>
+  <data name="col_FileName" xml:space="preserve">
+    <value>FileName</value>
+  </data>
+  <data name="col_FirstName" xml:space="preserve">
+    <value>FirstName</value>
+  </data>
+  <data name="col_HoldDate" xml:space="preserve">
+    <value>HoldDate</value>
+  </data>
+  <data name="col_InvalidDate" xml:space="preserve">
+    <value>InvalidDate</value>
+  </data>
+  <data name="col_IsAdmin" xml:space="preserve">
+    <value>IsAdmin</value>
+  </data>
+  <data name="col_LastName" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="col_LevelEndDate" xml:space="preserve">
+    <value>LevelEndDate</value>
+  </data>
+  <data name="col_LevelNumber" xml:space="preserve">
+    <value>LevelNumber</value>
+  </data>
+  <data name="col_LevelStartDate" xml:space="preserve">
+    <value>LevelStartDate</value>
+  </data>
+  <data name="col_LevelStatusCommentId" xml:space="preserve">
+    <value>LevelStatusCommentId</value>
+  </data>
+  <data name="col_LevelStatusId" xml:space="preserve">
+    <value>LevelStatusId</value>
+  </data>
+  <data name="col_LevelUpdatedBy" xml:space="preserve">
+    <value>LevelUpdatedBy</value>
+  </data>
+  <data name="col_LocationId" xml:space="preserve">
+    <value>LocationId</value>
+  </data>
+  <data name="col_LoginId" xml:space="preserve">
+    <value>LoginId</value>
+  </data>
+  <data name="col_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="col_NoOfPages" xml:space="preserve">
+    <value>NoOfPages</value>
+  </data>
+  <data name="col_NumberOfDxCode" xml:space="preserve">
+    <value>NumberOfDxCode</value>
+  </data>
+  <data name="col_OverallStatus" xml:space="preserve">
+    <value>OverallStatus</value>
+  </data>
+  <data name="col_PageNumbers" xml:space="preserve">
+    <value>PageNumbers</value>
+  </data>
+  <data name="col_ReceivedDate" xml:space="preserve">
+    <value>ReceivedDate</value>
+  </data>
+  <data name="col_Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="sp_GetChartInfoById" xml:space="preserve">
+    <value>dbo.GetChartInfoById</value>
+  </data>
+  <data name="sp_GetCommentsByCategory" xml:space="preserve">
+    <value>dbo.GetCommentsByCategory</value>
+  </data>
+  <data name="sp_GetLookupByCategory" xml:space="preserve">
+    <value>dbo.GetLookupByCategory</value>
+  </data>
+  <data name="sp_GetClientProjectById" xml:space="preserve">
+    <value>dbo.GetClientProjectById</value>
+  </data>
+  <data name="sp_GetCommentsById" xml:space="preserve">
+    <value>dbo.GetCommentsById</value>
+  </data>
+  <data name="sp_GetLookupById" xml:space="preserve">
+    <value>dbo.GetLookupById</value>
+  </data>
+  <data name="param_Description" xml:space="preserve">
+    <value>@Description</value>
+  </data>
+  <data name="param_IsActive" xml:space="preserve">
+    <value>@IsActive</value>
+  </data>
+  <data name="sp_InsertUpdateComments" xml:space="preserve">
+    <value>dbo.InsertUpdateComments</value>
+  </data>
+  <data name="param_UserName" xml:space="preserve">
+    <value>@UserName</value>
+  </data>
+  <data name="sp_GetEmployeeByUsername" xml:space="preserve">
+    <value>dbo.GetEmployeeByUsername</value>
+  </data>
+  <data name="param_EmployeeId" xml:space="preserve">
+    <value>@EmployeeId</value>
+  </data>
+  <data name="sp_GetEmployeeLevelByEmployeeId" xml:space="preserve">
+    <value>dbo.GetEmployeeLevelByEmployeeId</value>
+  </data>
+  <data name="sp_GetChartAuditByChartMoreInfoId" xml:space="preserve">
+    <value>dbo.GetChartAuditByChartMoreInfoId</value>
+  </data>
+  <data name="sp_GetChartAuditById" xml:space="preserve">
+    <value>dbo.GetChartAuditById</value>
+  </data>
+  <data name="sp_GetChartMoreInfoByChartId" xml:space="preserve">
+    <value>dbo.GetChartMoreInfoByChartId</value>
+  </data>
+  <data name="param_LevelNumber" xml:space="preserve">
+    <value>@LevelNumber</value>
+  </data>
+  <data name="sp_GetChartInfoByEmployee" xml:space="preserve">
+    <value>dbo.GetChartInfoByEmployee</value>
+  </data>
+  <data name="sp_GetEmployeeByEmployeeLevelId" xml:space="preserve">
+    <value>dbo.GetEmployeeByEmployeeLevelId</value>
+  </data>
+  <data name="sp_GetEmployeeLevelById" xml:space="preserve">
+    <value>dbo.GetEmployeeLevelById</value>
+  </data>
+  <data name="sp_GetChartMoreInfoById" xml:space="preserve">
+    <value>dbo.GetChartMoreInfoById</value>
+  </data>
+  <data name="param_DisplayOrder" xml:space="preserve">
+    <value>@DisplayOrder</value>
+  </data>
+  <data name="param_Name" xml:space="preserve">
+    <value>@Name</value>
+  </data>
+  <data name="param_Value" xml:space="preserve">
+    <value>@Value</value>
+  </data>
+  <data name="sp_GetLookups" xml:space="preserve">
+    <value>dbo.GetLookups</value>
+  </data>
+  <data name="sp_InsertUpdateLookup" xml:space="preserve">
+    <value>dbo.InsertUpdateLookup</value>
+  </data>
+  <data name="sp_InsertUpdateEmployee" xml:space="preserve">
+    <value>dbo.InsertUpdateEmployee</value>
+  </data>
+  <data name="sp_InsertUpdateEmployeeLevel" xml:space="preserve">
+    <value>dbo.InsertUpdateEmployeeLevel</value>
+  </data>
+  <data name="param_FirstName" xml:space="preserve">
+    <value>@FirstName</value>
+  </data>
+  <data name="param_IsAdmin" xml:space="preserve">
+    <value>@IsAdmin</value>
+  </data>
+  <data name="param_LastName" xml:space="preserve">
+    <value>@LastName</value>
+  </data>
+  <data name="param_LocationId" xml:space="preserve">
+    <value>@LocationId</value>
+  </data>
+  <data name="param_Comments" xml:space="preserve">
+    <value>@Comments</value>
+  </data>
+  <data name="param_CorrectedValue" xml:space="preserve">
+    <value>@CorrectedValue</value>
+  </data>
+  <data name="param_ErrorCategoryId" xml:space="preserve">
+    <value>@ErrorCategoryId</value>
+  </data>
+  <data name="param_ErrorSubCategoryId" xml:space="preserve">
+    <value>@ErrorSubCategoryId</value>
+  </data>
+  <data name="param_PageNumbers" xml:space="preserve">
+    <value>@PageNumbers</value>
+  </data>
+  <data name="sp_InsertChartAudit" xml:space="preserve">
+    <value>dbo.InsertChartAudit</value>
+  </data>
+  <data name="param_LevelStatusCommentId" xml:space="preserve">
+    <value>@LevelStatusCommentId</value>
+  </data>
+  <data name="param_LevelStatusId" xml:space="preserve">
+    <value>@LevelStatusId</value>
+  </data>
+  <data name="param_NoOfPages" xml:space="preserve">
+    <value>@NoOfPages</value>
+  </data>
+  <data name="param_NumberOfDxCode" xml:space="preserve">
+    <value>@NumberOfDxCode</value>
+  </data>
+  <data name="param_OverallStatus" xml:space="preserve">
+    <value>@OverallStatus</value>
+  </data>
+  <data name="sp_UpdateChartInfoStatus" xml:space="preserve">
+    <value>dbo.UpdateChartInfoStatus</value>
+  </data>
+  <data name="sp_UpdateChartMoreInfoStatus" xml:space="preserve">
+    <value>dbo.UpdateChartMoreInfoStatus</value>
+  </data>
+  <data name="sp_GetLookupByClientProjectIdAndCategory" xml:space="preserve">
+    <value>dbo.GetLookupByClientProjectIdAndCategory</value>
+  </data>
+  <data name="col_UploadedBy" xml:space="preserve">
+    <value>UploadedBy</value>
+  </data>
+  <data name="col_UploadedDate" xml:space="preserve">
+    <value>UploadedDate</value>
+  </data>
+  <data name="param_UploadedBy" xml:space="preserve">
+    <value>@UploadedBy</value>
+  </data>
+  <data name="bc_col_ClientMarket" xml:space="preserve">
+    <value>ClientMarket</value>
+  </data>
+  <data name="bc_col_ClientProjectId" xml:space="preserve">
+    <value>ClientProjectId</value>
+  </data>
+  <data name="bc_col_ClientReference" xml:space="preserve">
+    <value>ClientReference</value>
+  </data>
+  <data name="bc_col_FileName" xml:space="preserve">
+    <value>FileName</value>
+  </data>
+  <data name="bc_col_ReceivedDate" xml:space="preserve">
+    <value>ReceivedDate</value>
+  </data>
+  <data name="bc_dest_EPS_Stage" xml:space="preserve">
+    <value>EPS_Stage</value>
+  </data>
+  <data name="sp_ChartInfoBulkMerge" xml:space="preserve">
+    <value>dbo.ChartInfoBulkMerge</value>
+  </data>
+  <data name="sp_RequestLevelChart" xml:space="preserve">
+    <value>dbo.RequestLevel{0}Chart</value>
+  </data>
+  <data name="sp_GetEmployeeLevelByActiveEmployeeId" xml:space="preserve">
+    <value>dbo.GetEmployeeLevelByActiveEmployeeId</value>
+  </data>
+  <data name="sp_GetEmployees" xml:space="preserve">
+    <value>dbo.GetEmployees</value>
+  </data>
+  <data name="col_UserName" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="sp_GetWIPChartInfo" xml:space="preserve">
+    <value>dbo.GetWIPChartInfo</value>
+  </data>
+  <data name="param_ReceivedDate" xml:space="preserve">
+    <value>@ReceivedDate</value>
+  </data>
+  <data name="param_FromDate" xml:space="preserve">
+    <value>@FromDate</value>
+  </data>
+  <data name="param_ToDate" xml:space="preserve">
+    <value>@ToDate</value>
+  </data>
+  <data name="param_LevelUpdatedBy" xml:space="preserve">
+    <value>@LevelUpdatedBy</value>
+  </data>
+  <data name="col_BackLogLevel1Begin" xml:space="preserve">
+    <value>BackLogLevel1Begin</value>
+  </data>
+  <data name="col_BacklogLevel1End" xml:space="preserve">
+    <value>BacklogLevel1End</value>
+  </data>
+  <data name="col_BackLogLevel2Begin" xml:space="preserve">
+    <value>BackLogLevel2Begin</value>
+  </data>
+  <data name="col_BacklogLevel2End" xml:space="preserve">
+    <value>BacklogLevel2End</value>
+  </data>
+  <data name="col_ChartsCompletedLevel1" xml:space="preserve">
+    <value>ChartsCompletedLevel1</value>
+  </data>
+  <data name="col_ChartsCompletedLevel2" xml:space="preserve">
+    <value>ChartsCompletedLevel2</value>
+  </data>
+  <data name="col_ChartsReceived" xml:space="preserve">
+    <value>ChartsReceived</value>
+  </data>
+  <data name="col_FirstPassErrorRate" xml:space="preserve">
+    <value>FirstPassErrorRate</value>
+  </data>
+  <data name="col_InvalidCharts" xml:space="preserve">
+    <value>InvalidCharts</value>
+  </data>
+  <data name="col_Level2Greater2Days" xml:space="preserve">
+    <value>Level2Greater2Days</value>
+  </data>
+  <data name="col_LoginsUsed" xml:space="preserve">
+    <value>LoginsUsed</value>
+  </data>
+  <data name="col_NoOfLevel1Resources" xml:space="preserve">
+    <value>NoOfLevel1Resources</value>
+  </data>
+  <data name="col_NoOfLevel2Resources" xml:space="preserve">
+    <value>NoOfLevel2Resources</value>
+  </data>
+  <data name="col_ProcessedDate" xml:space="preserve">
+    <value>ProcessedDate</value>
+  </data>
+  <data name="col_TotalAvailLogins" xml:space="preserve">
+    <value>TotalAvailLogins</value>
+  </data>
+  <data name="col_WellmedErrorRate" xml:space="preserve">
+    <value>WellmedErrorRate</value>
+  </data>
+  <data name="param_Project" xml:space="preserve">
+    <value>@Project</value>
+  </data>
+  <data name="sp_rptGetChartDetail" xml:space="preserve">
+    <value>dbo.rptGetChartDetail</value>
+  </data>
+  <data name="param_IsWeb" xml:space="preserve">
+    <value>@isWeb</value>
+  </data>
+  <data name="param_lastProcessDate" xml:space="preserve">
+    <value>@lastProcessDate</value>
+  </data>
+  <data name="param_PreviousLevelUpdatedBy" xml:space="preserve">
+    <value>@PreviousLevelUpdatedBy</value>
+  </data>
+  <data name="sp_UpdateChartMoreInfoReallocate" xml:space="preserve">
+    <value>dbo.UpdateChartMoreInfoReallocate</value>
+  </data>
+  <data name="col_L1EndDate" xml:space="preserve">
+    <value>L1EndDate</value>
+  </data>
+  <data name="col_L1Resource" xml:space="preserve">
+    <value>L1Resource</value>
+  </data>
+  <data name="col_L1StartDate" xml:space="preserve">
+    <value>L1StartDate</value>
+  </data>
+  <data name="col_L1TimeTaken" xml:space="preserve">
+    <value>L1TimeTaken</value>
+  </data>
+  <data name="col_L2EndDate" xml:space="preserve">
+    <value>L2EndDate</value>
+  </data>
+  <data name="col_L2Resource" xml:space="preserve">
+    <value>L2Resource</value>
+  </data>
+  <data name="col_L2StartDate" xml:space="preserve">
+    <value>L2StartDate</value>
+  </data>
+  <data name="col_L2TimeTaken" xml:space="preserve">
+    <value>L2TimeTaken</value>
+  </data>
+  <data name="col_L3EndDate" xml:space="preserve">
+    <value>L3EndDate</value>
+  </data>
+  <data name="col_L3Resource" xml:space="preserve">
+    <value>L3Resource</value>
+  </data>
+  <data name="col_L3StartDate" xml:space="preserve">
+    <value>L3StartDate</value>
+  </data>
+  <data name="col_L3TimeTaken" xml:space="preserve">
+    <value>L3TimeTaken</value>
+  </data>
+  <data name="col_LoggedOnId" xml:space="preserve">
+    <value>LoggedOnId</value>
+  </data>
+  <data name="sp_RequestLevelChartByClientReference" xml:space="preserve">
+    <value>dbo.RequestLevel{0}ChartByClientReference</value>
+  </data>
+  <data name="param_ClientReference" xml:space="preserve">
+    <value>@ClientReference</value>
+  </data>
+  <data name="param_xmlData" xml:space="preserve">
+    <value>@xmlData</value>
+  </data>
+  <data name="sp_DeleteClientAllocatedCharts" xml:space="preserve">
+    <value>dbo.DeleteClientAllocatedCharts</value>
+  </data>
+  <data name="col_AdditionalComments" xml:space="preserve">
+    <value>AdditionalComments</value>
+  </data>
+  <data name="col_LastUpdatedDate" xml:space="preserve">
+    <value>LastUpdatedDate</value>
+  </data>
+  <data name="param_AdditionalComments" xml:space="preserve">
+    <value>@AdditionalComments</value>
+  </data>
+  <data name="col_AuditDate" xml:space="preserve">
+    <value>AuditDate</value>
+  </data>
+  <data name="col_AuditedBy" xml:space="preserve">
+    <value>AuditedBy</value>
+  </data>
+  <data name="col_ErrorCategory" xml:space="preserve">
+    <value>ErrorCategory</value>
+  </data>
+  <data name="col_ErrorDescription" xml:space="preserve">
+    <value>ErrorDescription</value>
+  </data>
+  <data name="col_ErrorSubcategory" xml:space="preserve">
+    <value>ErrorSubcategory</value>
+  </data>
+  <data name="col_ProcessedBy" xml:space="preserve">
+    <value>ProcessedBy</value>
+  </data>
+  <data name="col_ReviewDate" xml:space="preserve">
+    <value>ReviewDate</value>
+  </data>
+  <data name="sp_rptGetChartAudits" xml:space="preserve">
+    <value>dbo.rptGetChartAudits</value>
+  </data>
+  <data name="col_AuditCount" xml:space="preserve">
+    <value>AuditCount</value>
+  </data>
+  <data name="sp_GetChartInfoDeallocation" xml:space="preserve">
+    <value>dbo.GetChartInfoDeallocation</value>
+  </data>
+  <data name="sp_GetCommentsCategories" xml:space="preserve">
+    <value>dbo.GetCommentsCategories</value>
+  </data>
+  <data name="col_L1StatusComment" xml:space="preserve">
+    <value>L1StatusComment</value>
+  </data>
+  <data name="col_L2StatusComment" xml:space="preserve">
+    <value>L2StatusComment</value>
+  </data>
+  <data name="col_L3StatusComment" xml:space="preserve">
+    <value>L3StatusComment</value>
+  </data>
+  <data name="col_L1NumberOfDxCodes" xml:space="preserve">
+    <value>L1NumberOfDxCodes</value>
+  </data>
+  <data name="col_L2NumberOfDxCodes" xml:space="preserve">
+    <value>L2NumberOfDxCodes</value>
+  </data>
+  <data name="col_L3NumberOfDxCodes" xml:space="preserve">
+    <value>L3NumberOfDxCodes</value>
+  </data>
+  <data name="sp_GetChartAuditByChartInfoId" xml:space="preserve">
+    <value>dbo.GetChartAuditByChartInfoId</value>
+  </data>
+  <data name="col_L3LevelDisagreeId" xml:space="preserve">
+    <value>L3LevelDisagreeId</value>
+  </data>
+  <data name="param_L3LevelDisagreeId" xml:space="preserve">
+    <value>@L3LevelDisagreeId</value>
+  </data>
+  <data name="sp_UpdateL3ChartAuditLevelDisagreement" xml:space="preserve">
+    <value>dbo.UpdateL3ChartAuditLevelDisagreement</value>
+  </data>
+  <data name="param_RecordsAffected" xml:space="preserve">
+    <value>@RecordsAffected</value>
+  </data>
+  <data name="sp_GetChartsForReallocation" xml:space="preserve">
+    <value>dbo.GetChartsForReallocation</value>
+  </data>
+  <data name="param_ChartDateType" xml:space="preserve">
+    <value>@chartDateType</value>
+  </data>
+  <data name="sp_rptGetChartInfoForInvoice" xml:space="preserve">
+    <value>dbo.rptGetChartInfoForInvoice</value>
+  </data>
+  <data name="param_FromIP" xml:space="preserve">
+    <value>@FromIP</value>
+  </data>
+  <data name="param_LogType" xml:space="preserve">
+    <value>@LogType</value>
+  </data>
+  <data name="param_Message" xml:space="preserve">
+    <value>@Message</value>
+  </data>
+  <data name="param_MessageType" xml:space="preserve">
+    <value>@MessageType</value>
+  </data>
+  <data name="param_Module" xml:space="preserve">
+    <value>@Module</value>
+  </data>
+  <data name="param_Timestamp" xml:space="preserve">
+    <value>@timeStamp</value>
+  </data>
+  <data name="sp_InsertErrorLog" xml:space="preserve">
+    <value>dbo.InsertErrorLog</value>
+  </data>
+  <data name="col_CompletedChartsCount" xml:space="preserve">
+    <value>CompletedChartsCount</value>
+  </data>
+  <data name="col_ErrorChartsCount" xml:space="preserve">
+    <value>ErrorChartsCount</value>
+  </data>
+  <data name="col_TotalCharts" xml:space="preserve">
+    <value>TotalCharts</value>
+  </data>
+  <data name="param_isByDxCode" xml:space="preserve">
+    <value>@isByDxCode</value>
+  </data>
+  <data name="sp_rptGetInfoForUserPerformace" xml:space="preserve">
+    <value>dbo.rptGetInfoForUserPerformace</value>
+  </data>
+  <data name="sp_GetProductionStats" xml:space="preserve">
+    <value>dbo.GetProductionStats</value>
+  </data>
+  <data name="col_CompletedCharts" xml:space="preserve">
+    <value>CompletedCharts</value>
+  </data>
+  <data name="col_L1Completed" xml:space="preserve">
+    <value>L1Completed</value>
+  </data>
+  <data name="col_L1Hold" xml:space="preserve">
+    <value>L1Hold</value>
+  </data>
+  <data name="col_L1Invalid" xml:space="preserve">
+    <value>L1Invalid</value>
+  </data>
+  <data name="col_L1Pending" xml:space="preserve">
+    <value>L1Pending</value>
+  </data>
+  <data name="col_L1WorkInProgress" xml:space="preserve">
+    <value>L1WorkInProgress</value>
+  </data>
+  <data name="col_L2Completed" xml:space="preserve">
+    <value>L2Completed</value>
+  </data>
+  <data name="col_L2Hold" xml:space="preserve">
+    <value>L2Hold</value>
+  </data>
+  <data name="col_L2Invalid" xml:space="preserve">
+    <value>L2Invalid</value>
+  </data>
+  <data name="col_L2Pending" xml:space="preserve">
+    <value>L2Pending</value>
+  </data>
+  <data name="col_L2WorkInProgress" xml:space="preserve">
+    <value>L2WorkInProgress</value>
+  </data>
+  <data name="col_L3Completed" xml:space="preserve">
+    <value>L3Completed</value>
+  </data>
+  <data name="col_L3Hold" xml:space="preserve">
+    <value>L3Hold</value>
+  </data>
+  <data name="col_L3Invalid" xml:space="preserve">
+    <value>L3Invalid</value>
+  </data>
+  <data name="col_L3Pending" xml:space="preserve">
+    <value>L3Pending</value>
+  </data>
+  <data name="col_L3WorkInProgress" xml:space="preserve">
+    <value>L3WorkInProgress</value>
+  </data>
+  <data name="col_ImportedCharts" xml:space="preserve">
+    <value>ImportedCharts</value>
+  </data>
+  <data name="col_UnassignedCharts" xml:space="preserve">
+    <value>UnassignedCharts</value>
+  </data>
+  <data name="col_IsByDxCode" xml:space="preserve">
+    <value>IsByDxCode</value>
+  </data>
+  <data name="col_Range2" xml:space="preserve">
+    <value>Range2</value>
+  </data>
+  <data name="col_Range3" xml:space="preserve">
+    <value>Range3</value>
+  </data>
+  <data name="col_Range1" xml:space="preserve">
+    <value>Range1</value>
+  </data>
+  <data name="col_Range5" xml:space="preserve">
+    <value>Range5</value>
+  </data>
+  <data name="col_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="sp_rptGetAgingSummaryReport" xml:space="preserve">
+    <value>dbo.rptGetAgingSummaryReport</value>
+  </data>
+  <data name="col_isCompleted" xml:space="preserve">
+    <value>isCompleted</value>
+  </data>
+  <data name="param_DateRangeType" xml:space="preserve">
+    <value>@DateRangeType</value>
+  </data>
+  <data name="sp_rptGetAgingReportCompleted" xml:space="preserve">
+    <value>dbo.rptGetAgingReportCompleted</value>
+  </data>
+  <data name="sp_rptGetAgingReportIncomplete" xml:space="preserve">
+    <value>dbo.rptGetAgingReportIncomplete</value>
+  </data>
+  <data name="sp_ImportChartData" xml:space="preserve">
+    <value>dbo.ImportChartData</value>
+  </data>
+  <data name="col_IsL1Auto" xml:space="preserve">
+    <value>IsL1Auto</value>
+  </data>
+  <data name="col_IsL2Auto" xml:space="preserve">
+    <value>IsL2Auto</value>
+  </data>
+  <data name="col_IsL3Auto" xml:space="preserve">
+    <value>IsL3Auto</value>
+  </data>
+  <data name="col_Range4" xml:space="preserve">
+    <value>Range4</value>
+  </data>
+  <data name="param_IsCompleted" xml:space="preserve">
+    <value>@isCompleted</value>
+  </data>
+  <data name="col_HomepageText" xml:space="preserve">
+    <value>HomepageText</value>
+  </data>
+  <data name="param_HomepageText" xml:space="preserve">
+    <value>@HomepageText</value>
+  </data>
+  <data name="sp_UpdateClientProject" xml:space="preserve">
+    <value>dbo.UpdateClientProject</value>
+  </data>
+  <data name="sp_GetChartMoreInfoByChartIdAndLevel" xml:space="preserve">
+    <value>dbo.GetChartMoreInfoByChartIdAndLevel</value>
+  </data>
+  <data name="param_IsL1Auto" xml:space="preserve">
+    <value>@IsL1Auto</value>
+  </data>
+  <data name="param_IsL2Auto" xml:space="preserve">
+    <value>@IsL2Auto</value>
+  </data>
+  <data name="param_IsL3Auto" xml:space="preserve">
+    <value>@IsL3Auto</value>
+  </data>
+  <data name="col_UpdatedBy" xml:space="preserve">
+    <value>UpdatedBy</value>
+  </data>
+  <data name="col_UpdatedDate" xml:space="preserve">
+    <value>UpdatedDate</value>
+  </data>
+  <data name="param_UpdatedBy" xml:space="preserve">
+    <value>@UpdatedBy</value>
+  </data>
+  <data name="col_IsReportUser" xml:space="preserve">
+    <value>IsReportUser</value>
+  </data>
+  <data name="param_IsReportUser" xml:space="preserve">
+    <value>@IsReportUser</value>
+  </data>
+  <data name="sp_GetChartInfoDirectUpload" xml:space="preserve">
+    <value>dbo.GetChartInfoDirectUpload</value>
+  </data>
+  <data name="sp_DirectUploadCharts" xml:space="preserve">
+    <value>dbo.DirectUploadCharts</value>
+  </data>
+  <data name="param_EPSSysUserName" xml:space="preserve">
+    <value>@EPSSysUserName</value>
+  </data>
+  <data name="col_InvalidChartsCount" xml:space="preserve">
+    <value>InvalidChartsCount</value>
+  </data>
+  <data name="col_EndDatetime" xml:space="preserve">
+    <value>EndDatetime</value>
+  </data>
+  <data name="col_StartDatetime" xml:space="preserve">
+    <value>StartDatetime</value>
+  </data>
+  <data name="sp_GetChartProductionByChartMoreInfoIdAndLevel" xml:space="preserve">
+    <value>dbo.GetChartProductionByChartMoreInfoIdAndLevel</value>
+  </data>
+  <data name="col_L1ChartMoreInfoId" xml:space="preserve">
+    <value>L1ChartMoreInfoId</value>
+  </data>
+  <data name="col_L1ProductionTimeCount" xml:space="preserve">
+    <value>L1ProductionTimeCount</value>
+  </data>
+  <data name="col_L2ChartMoreInfoId" xml:space="preserve">
+    <value>L2ChartMoreInfoId</value>
+  </data>
+  <data name="col_L2ProductionTimeCount" xml:space="preserve">
+    <value>L2ProductionTimeCount</value>
+  </data>
+  <data name="col_L3ChartMoreInfoId" xml:space="preserve">
+    <value>L3ChartMoreInfoId</value>
+  </data>
+  <data name="col_L3ProductionTimeCount" xml:space="preserve">
+    <value>L3ProductionTimeCount</value>
+  </data>
+  <data name="col_TimeTaken" xml:space="preserve">
+    <value>TimeTaken</value>
+  </data>
+  <data name="col_QualityControl" xml:space="preserve">
+    <value>QualityControl</value>
+  </data>
+  <data name="sp_GetChartsPendingCount" xml:space="preserve">
+    <value>dbo.GetChartsPendingCount</value>
+  </data>
+  <data name="col_ClientKey" xml:space="preserve">
+    <value>ClientKey</value>
+  </data>
+  <data name="col_ProjectKey" xml:space="preserve">
+    <value>ProjectKey</value>
+  </data>
+  <data name="bc_dest_EPS_Stage_BulkDelete" xml:space="preserve">
+    <value>EPS_Stage_BulkDelete</value>
+  </data>
+  <data name="sp_ImportBulkDeallocate" xml:space="preserve">
+    <value>dbo.ImportBulkDeallocate</value>
+  </data>
+  <data name="sp_ChartBulkDeallocate" xml:space="preserve">
+    <value>dbo.ChartBulkDeallocate</value>
+  </data>
+  <data name="param_DeleteAll" xml:space="preserve">
+    <value>@DeleteAll</value>
+  </data>
+  <data name="col_Queue" xml:space="preserve">
+    <value>Queue</value>
+  </data>
+  <data name="col_QueueKey" xml:space="preserve">
+    <value>QueueKey</value>
+  </data>
+  <data name="param_ClientKey" xml:space="preserve">
+    <value>@ClientKey</value>
+  </data>
+  <data name="param_Flag" xml:space="preserve">
+    <value>@Flag</value>
+  </data>
+  <data name="param_iClientProjectID" xml:space="preserve">
+    <value>iClientProjectID</value>
+  </data>
+  <data name="param_ProjectKey" xml:space="preserve">
+    <value>@ProjectKey</value>
+  </data>
+  <data name="param_Queue" xml:space="preserve">
+    <value>@Queue</value>
+  </data>
+  <data name="param_QueueId" xml:space="preserve">
+    <value>@QueueId</value>
+  </data>
+  <data name="param_RETVAL" xml:space="preserve">
+    <value>@RETVAL</value>
+  </data>
+  <data name="sp_GetQueueByUser" xml:space="preserve">
+    <value>GetQueueByUser</value>
+  </data>
+  <data name="sp_GetQueueCategoryByUser" xml:space="preserve">
+    <value>GetQueueCategoryByUser</value>
+  </data>
+  <data name="sp_InsertUpdateQueue" xml:space="preserve">
+    <value>InsertUpdateQueue</value>
+  </data>
+  <data name="sp_UpdateChartMoreInfoEditable" xml:space="preserve">
+    <value>dbo.UpdateChartMoreInfoEditable</value>
+  </data>
+  <data name="param_fileName" xml:space="preserve">
+    <value>@FileName</value>
+  </data>
+  <data name="sp_GetChartAuditComments" xml:space="preserve">
+    <value>dbo.GetChartAuditComments</value>
+  </data>
+  <data name="sp_UpdateChartAudit" xml:space="preserve">
+    <value>dbo.UpdateChartAudit</value>
+  </data>
+  <data name="param_IsDelete" xml:space="preserve">
+    <value>@Flag</value>
+  </data>
+  <data name="sp_DeleteChartAuditUpdateComments" xml:space="preserve">
+    <value>dbo.DeleteChartAuditUpdateComments</value>
+  </data>
+  <data name="param_AuditId" xml:space="preserve">
+    <value>@AuditId</value>
+  </data>
+  <data name="param_Factorial" xml:space="preserve">
+    <value>@Factorialization</value>
+  </data>
+  <data name="col_Factorialization" xml:space="preserve">
+    <value>Factorialization</value>
+  </data>
+  <data name="sp_GetChartsCompletedCount" xml:space="preserve">
+    <value>dbo.GetChartsCompletedCount</value>
+  </data>
+  <data name="usp_EPIC_User_PipelineInsertUpdate" xml:space="preserve">
+    <value>usp_EPIC_User_PipelineInsertUpdate</value>
+  </data>
+  <data name="col_C_sAuthenticationKey" xml:space="preserve">
+    <value>@AuthenticationKey</value>
+  </data>
+  <data name="col_C_sClientList" xml:space="preserve">
+    <value>@ClientIDs</value>
+  </data>
+  <data name="col_C_sEmail" xml:space="preserve">
+    <value>@Email</value>
+  </data>
+  <data name="col_C_sIsExpired" xml:space="preserve">
+    <value>@IsExpired</value>
+  </data>
+  <data name="col_C_sModifiedBy" xml:space="preserve">
+    <value>@ModifiedBy</value>
+  </data>
+  <data name="col_C_sUserDisplayName" xml:space="preserve">
+    <value>@DisplayName</value>
+  </data>
+  <data name="col_C_sUserRole" xml:space="preserve">
+    <value>@UserRole</value>
+  </data>
+  <data name="col_C_Type" xml:space="preserve">
+    <value>@Type</value>
+  </data>
+  <data name="usp_EPIC_User_DeletePipelineInfo" xml:space="preserve">
+    <value>usp_EPIC_User_DeletePipelineInfo</value>
+  </data>
+  <data name="GetPipeLineUsers" xml:space="preserve">
+    <value>GetPipeLineUsers</value>
+  </data>
+  <data name="usp_EPIC_User_GetPipelineInfoByKey" xml:space="preserve">
+    <value>usp_EPIC_User_GetPipelineInfoByKey</value>
+  </data>
+  <data name="usp_EPIC_User_CreateProfile" xml:space="preserve">
+    <value>usp_EPIC_User_CreateProfile</value>
+  </data>
+  <data name="col_QC" xml:space="preserve">
+    <value>QCRate</value>
+  </data>
+  <data name="sp_rptGetInfoForUserPerformace_Test" xml:space="preserve">
+    <value>rptGetInfoForUserPerformace_Test</value>
+  </data>
+  <data name="col_chartaudited" xml:space="preserve">
+    <value>chartaudited</value>
+  </data>
+  <data name="sp_GetProductionStats_Test" xml:space="preserve">
+    <value>GetProductionStats_TEST</value>
+  </data>
+  <data name="sp_GetInActivateProjectList" xml:space="preserve">
+    <value>GetInActivateProjectList</value>
+  </data>
+  <data name="sp_GetActiveProjectList" xml:space="preserve">
+    <value>GetActiveProjectList</value>
+  </data>
+  <data name="param_ActiveProjectId" xml:space="preserve">
+    <value>@ActiveProjectId</value>
+  </data>
+  <data name="param_InactiveProjectId" xml:space="preserve">
+    <value>@InactiveProjectId</value>
+  </data>
+  <data name="sp_ActiveInactiveUserMapping" xml:space="preserve">
+    <value>ActiveInactiveUserMapping</value>
+  </data>
+  <data name="sp_GetClientProjectById_List" xml:space="preserve">
+    <value>GetClientProjectById_List</value>
+  </data>
+  <data name="sp_GetEmployeeLevelByEmployeeId_List" xml:space="preserve">
+    <value>GetEmployeeLevelByEmployeeId_List</value>
+  </data>
+  <data name="sp_GetEmployees_List" xml:space="preserve">
+    <value>GetEmployees_List</value>
+  </data>
+  <data name="sp_GetLookupByIdList" xml:space="preserve">
+    <value>GetLookupByIdList</value>
+  </data>
+  <data name="col_LocationName" xml:space="preserve">
+    <value>LocationName</value>
+  </data>
+  <data name="sp_GetClientProjectsdrp" xml:space="preserve">
+    <value>GetClientProjectsdrp</value>
+  </data>
+  <data name="col_isLocked" xml:space="preserve">
+    <value>IsLockedOut</value>
+  </data>
+  <data name="sp_BulkReallocation_FROM_Status" xml:space="preserve">
+    <value>BulkReallocation_FROM_Status</value>
+  </data>
+  <data name="col_BulkReallocation_TO_Status" xml:space="preserve">
+    <value>BulkReallocation_TO_Status</value>
+  </data>
+  <data name="col_FromStatus" xml:space="preserve">
+    <value>From_Status</value>
+  </data>
+  <data name="col_FromStatusId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="param_toStatusID" xml:space="preserve">
+    <value>@ID</value>
+  </data>
+  <data name="sp_BulkReallocation_TO_Status" xml:space="preserve">
+    <value>BulkReallocation_TO_Status</value>
+  </data>
+  <data name="col_ProjectStatus" xml:space="preserve">
+    <value>ProjectStatus</value>
+  </data>
+  <data name="param_FromStatus" xml:space="preserve">
+    <value>@FromStatus</value>
+  </data>
+  <data name="sp_GetChartBulkReallocation" xml:space="preserve">
+    <value>GetChartBulkReallocation</value>
+  </data>
+  <data name="param_DateType" xml:space="preserve">
+    <value>@DateType</value>
+  </data>
+  <data name="sp_GetProjectList" xml:space="preserve">
+    <value>GetProjectList</value>
+  </data>
+  <data name="sp_GetQueueList" xml:space="preserve">
+    <value>GetQueueList</value>
+  </data>
+  <data name="sp_GetClientList" xml:space="preserve">
+    <value>GetClientList</value>
+  </data>
+</root>

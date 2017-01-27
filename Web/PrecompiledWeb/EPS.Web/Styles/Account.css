@@ -1,0 +1,339 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+
+
+body
+{
+	/*background: #b6b7bc;*/
+	font-size: .80em;
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	color: #696969; /*color: #333;	margin: 0;*/
+	overflow-y: auto;
+}
+
+body.login div.login
+{
+	padding: 8px 25px 10px 28px;
+	background: #F3F7FC;
+	text-align: left;
+	width: 350px;
+	margin: 0px auto;
+	font-size: 12px;
+	border: 1px solid #aaa;
+	vertical-align: middle;
+}
+div.login a:link, a:visited
+{
+	color: #034af3;
+}
+div.login a:hover
+{
+	color: #1d60ff;
+	text-decoration: none;
+}
+div.login a:active
+{
+	color: #034af3;
+}
+
+#loginheader
+{
+	padding: 25px 28px;
+	text-align: left;
+	width: 350px;
+	margin: 90px auto;
+	margin-bottom: 0px;
+	border: 1px solid #aaa;
+	color: #fff;
+	font-variant: small-caps;
+	text-transform: none;
+	font-size: 1.5em;
+	font-weight: 600;
+  /*   background  : -webkit-gradient(linear, left top, left bottom, from(#0067a9), to(#014476)); 
+	background: -moz-linear-gradient(top,  #0067a9, #014476);*/
+	background: #014476;
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0067a9', endColorstr='#014476', GradientType=0)"; /* for IE 8 and below */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0067a9', endColorstr='#014476', GradientType=0)"; /* for IE 9 and above */
+    background: -webkit-gradient(linear, left top, left bottom, from(#0067a9), to(#014476)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #0067a9, #014476);
+  /*  moz-box-shadow: -1px 1px 1px rgba(0,0,0,.2);
+   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    border-radius: 0px 0px 10px 10px;
+   -moz-border-radius: 0px 0px 10px 10px;
+   -webkit-border-radius: 0px 0px 10px 10px;*/
+
+}
+
+.radius
+{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 0 6px #999;
+	-webkit-box-shadow: 0 0 6px #999;
+	box-shadow: 0 0 6px #999;
+
+	
+}
+
+#loginlogo
+{
+	position: relative;
+	bottom: 2px;
+	left: 0; /*color: #f7f7ff;*/
+	font-smooth: always;
+}
+#loginlogo:before
+{
+	/*font: 900 36px arial;*/
+	/*font-weight: 900;
+	font-size: 36px;
+	font-variant: small-caps;
+	letter-spacing: -2px;
+	content: "EPI";
+	bottom: 0;
+	color: #fff;*/
+	content: 'Epi';
+	color: #67c2ed;
+	
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Cambria;
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+#loginlogo:after
+{
+	/*font: 100 36px arial;*/
+	/*font-weight: 100;
+	font-size: 36px;
+	font-variant: small-caps;
+	content: "Mis";
+	letter-spacing: -2px;
+	margin: 0;
+	color: #fff;*/
+	content: ' Production Scheduler';
+	color: #ffffff;
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" ,Cambria;
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+.button
+{
+	font-size: 12px;
+	font-weight: bold;
+	width: 100px;
+	height: 23px;
+	background: #016EBC;
+	border-style: groove;
+	border-width: 0px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.button:hover
+{
+	background: #015FA2;
+}
+
+.registernewuser
+{
+	float: right;
+	cursor: pointer;
+	margin-top: 4px;
+	margin-right: 4px;
+	font-size: 13px;
+}
+
+.forgetPwd
+{
+	float: right;
+	cursor: pointer;		
+	font-size: 13px;
+	margin-top: 4px;
+	margin-right: 42px;
+}
+
+p
+{
+	margin-bottom: 10px;
+	line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 1.5em;
+	color: #666666;
+	font-variant: small-caps;
+	text-transform: none;
+	font-weight: 200;
+	margin-bottom: 0px;
+}
+
+h1
+{
+	font-size: 1.6em;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+h2
+{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+h3
+{
+	font-size: 1.2em;
+}
+
+h4
+{
+	font-size: 1.1em;
+}
+
+h5, h6
+{
+	font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+	margin-top: 0px;
+}
+
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+	margin:0.5em;
+	padding:1em;
+	border: 1px solid #ccc;
+	width:310px;
+}
+
+fieldset p
+{
+	margin: 2px 12px 10px 10px;
+	width: 300px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+	display: block;
+}
+
+fieldset label.inline
+{
+	display: inline;
+}
+
+legend
+{
+	font-size: 1.1em;
+	font-weight: 600;
+	padding: 2px 4px 8px 4px;
+}
+
+input.textEntry
+{
+	width: 290px;
+	border: 1px solid #ccc;
+	background: #ffffff;
+	display: inline-block;
+	height: 29px;
+	margin: 0;
+	padding: 0 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+
+input.passwordEntry
+{
+	width: 290px;
+	border: 1px solid #ccc;
+	background: #ffffff;
+	display: inline-block;
+	height: 29px;
+	margin: 0;
+	padding: 0 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+
+select.register
+{
+	width: 288px;
+	border: 1px solid #ccc;
+	background: #ffffff;
+	display: inline-block;
+	height: 29px;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+
+div.accountInfo
+{
+	width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+	clear: both;
+}
+
+.title
+{
+	display: block;
+	float: left;
+	text-align: left;
+	width: auto;
+}
+
+.failureNotification
+{
+	font-size: 1.2em;
+	color: Red;
+	margin-left: 2px;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.submitButton
+{
+	text-align: right;
+	padding-right: 10px;
+	margin-left: 248px;
+}
+
+
+/*===========================================================================*/
+
+
+

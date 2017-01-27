@@ -1,0 +1,8 @@
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\bin\Debug\EPICompliance.dll
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\bin\Debug\EPICompliance.pdb
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\obj\Debug\EPICompliance.dll
+E:\VSS\Projects\EpiconnectV2\Web\EPICompliance\obj\Debug\EPICompliance.pdb
+E:\Bharathi\EpiconnectV2 SourceCode\EPICompliance\bin\Debug\EPICompliance.dll
+E:\Bharathi\EpiconnectV2 SourceCode\EPICompliance\bin\Debug\EPICompliance.pdb
+E:\Bharathi\EpiconnectV2 SourceCode\EPICompliance\obj\Debug\EPICompliance.dll
+E:\Bharathi\EpiconnectV2 SourceCode\EPICompliance\obj\Debug\EPICompliance.pdb

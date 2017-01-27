@@ -1,0 +1,267 @@
+﻿/*****************************************************************
+ * This file defines fundamental layout-related CSS
+ * nuanced styling should be kept out of here 
+ * 
+ * Indentation is intended to indicate nesting of elements
+ *****************************************************************/
+body
+{
+	/*background: #b6b7bc;*/
+	font-size: .80em;
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	color: #696969; /*color: #333; 	margin: 0;*/
+	overflow-y: auto;
+}
+a
+{
+	text-decoration: none;
+	color: #00E;
+}
+a:visited
+{
+	color: #00E;
+}
+a:hover
+{
+	text-decoration: underline;
+	cursor: pointer; /* even if there is no href attribute, make anchor behave that way */
+}
+
+/* MINIMAL SCROLLBARS
+----------------------------------------------------------*/
+
+div::-webkit-scrollbar
+{ 
+	width: 8px;
+	height: 10px;
+	background-color: #F8F7F0;
+}
+div::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
+}
+div::-webkit-scrollbar-button
+{
+	width: 0;
+	height: 0;
+	display: none;
+}
+/* END SCROLLBARS
+----------------------------------------------------------*/
+
+textarea::-webkit-scrollbar
+{
+	width: 8px;
+	height: 10px;
+	background-color: #F8F7F0;
+}
+textarea::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
+}
+textarea::-webkit-scrollbar-button
+{
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+pre
+{
+	text-align: left;
+}
+
+.menuItem a
+{
+	color: #333;
+	font-weight: 400;
+}
+.menuItem a:hover
+{
+	text-decoration: none;
+}
+
+.menuItemDelete
+{
+	width: 10px;
+	float: right;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.menuItemCount
+{
+	border: 1px solid #B3B3B2;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	width: 35px;
+	float: right;
+	left: 10px;
+	text-align: center;
+}
+
+#page
+{
+	width: 100%;
+	margin: 0 auto;
+	display: none;
+}
+
+#header-container
+{
+	color: #fff;
+	background: #777;
+	height: 62px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0067a9', endColorstr='#014476'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#0067a9), to(#014476)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #0067a9, #014476);
+	box-shadow: 0px 3px 3px #888;
+	position: relative;
+	z-index: 100;
+}
+
+#footer-container
+{
+	clear: both;
+	color: #fff;
+	background: #ddd;
+	height: 1px;
+}
+
+#header div, #footer div
+{
+	float: left;
+}
+
+#header, #footer
+{
+	width: 99%;/*1650px*/
+	margin: auto auto;
+}
+
+#header
+{
+	position: relative;
+	padding: 0 0 0 0;
+	height: 62px;
+}
+
+#Logo
+{
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	color: #f7f7ff;
+	font-smooth: always;
+}
+#Logo:before
+{
+	/*font: 900 36px arial;*/ /*font-weight: 900; 	font-size: 36px; 	font-variant: small-caps; 	letter-spacing: -2px; 	content: "Epi"; 	bottom: 0; 	color: #007DD6;*/
+	content: 'E';
+	color: #67c2ed;
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Cambria;
+	font-size: 40px;
+	font-weight: bold;
+}
+#Logo:after
+{
+	/*font: 100 36px arial;*/ /*font-weight: 100; 	font-size: 36px; 	font-variant: small-caps; 	content: "Mis"; 	letter-spacing: -2px; 	margin: 0; 	color: #fff;*/
+	content: 'PS';
+	color: #ffffff;
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" ,Cambria;
+	font-size: 40px;
+	font-weight: bold;
+}
+#version:after
+{
+	/*font: 100 36px arial;*/ /*font-weight: 100; 	font-size: 36px; 	font-variant: small-caps; 	content: "Mis"; 	letter-spacing: -2px; 	margin: 0; 	color: #fff;*/
+	/*content: 'V4.2';*/
+	color: #67c2ed;
+	font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" ,Cambria;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+#sidebar
+{
+float: left;
+	width: 17%;/*229px*/
+}
+
+#content p
+{
+	padding-right: 60px;
+}
+#content
+{
+	float: left;
+	width: 82%;/*1418px*/
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	position: relative;
+}
+
+#content-header
+{
+	padding: 12px 10px;
+	background: rgb(234, 239, 249);
+	height: 35px;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
+
+#divWelcome
+{
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+#Login
+{
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+}
+
+#contentPayload
+{
+	float: left;
+	width: 100%;
+	position: relative;
+	height: 100%; /*	overflow: auto; */
+}
+
+#divDashboardCanvas
+{
+	background-color: #F7F7FF;
+	padding: 5px;
+}
+
+
+/*.Menu
+{
+	width: 200px;
+	text-align: center;
+	border: solid 2px gray;
+	padding: 0px;
+	background-color: Silver;
+	cursor: hand;
+	font-weight: bold;
+}
+.MenuItem
+{
+	width: 192px;
+	text-align: center;
+	border: solid 1px silver;
+	padding: 2px;
+	background-color: whitesmoke;
+}
+*/

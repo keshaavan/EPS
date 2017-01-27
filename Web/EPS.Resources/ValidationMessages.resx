@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommentDescriptionAlreadyExists" xml:space="preserve">
+    <value>Comment description already exists.</value>
+  </data>
+  <data name="EmptyClientReference_MMM" xml:space="preserve">
+    <value>Please enter MemberId</value>
+  </data>
+  <data name="ExceededBulkUploadLimit" xml:space="preserve">
+    <value>Please limit your upload filesize to {0} charts.</value>
+  </data>
+  <data name="FileDeallocatedSuccessfully" xml:space="preserve">
+    <value>Records deallocated successfully. Records Imported = {0}; Deleted records = {1}</value>
+  </data>
+  <data name="FileUploadedSuccessfully" xml:space="preserve">
+    <value>Records Updated Successfully. Records Imported = {0}; Duplicate Records = {1}</value>
+  </data>
+  <data name="InvalidAccessClientProject" xml:space="preserve">
+    <value>You do not have access to the client project. Please contact your team lead.</value>
+  </data>
+  <data name="InvalidAccessToUploadPage" xml:space="preserve">
+    <value>You do not have access to upload the charts. Please contact your team lead.</value>
+  </data>
+  <data name="InvalidDataExistsInUpload" xml:space="preserve">
+    <value>Invalid Data exists in uploaded excel file. Please correct and then Upload</value>
+  </data>
+  <data name="InvalidFileFormatForUpload" xml:space="preserve">
+    <value>Only excel files can be uploaded.</value>
+  </data>
+  <data name="InvalidOldPassword" xml:space="preserve">
+    <value>The supplied old password is invalid.</value>
+  </data>
+  <data name="InvalidUploadFileSheetName" xml:space="preserve">
+    <value>Uploaded Excel layout has not been filled correctly. Please upload the appropriate excel file.</value>
+  </data>
+  <data name="NoExcelFileSelected" xml:space="preserve">
+    <value>Please select the excel file.</value>
+  </data>
+  <data name="PasswordPreviouslyUsed" xml:space="preserve">
+    <value>The password has been used in the previous ({0}) times. Please provide another password.</value>
+  </data>
+  <data name="RequiredClientProject" xml:space="preserve">
+    <value>Please choose a client.</value>
+  </data>
+  <data name="RequiredProject" xml:space="preserve">
+    <value>Please choose a project.</value>
+  </data>
+  <data name="RequiredQueue" xml:space="preserve">
+    <value>Please choose a queue.</value>
+  </data>
+  <data name="UserAlreadyLoggedOn" xml:space="preserve">
+    <value>You are already logged on a different machine. Please logout first</value>
+  </data>
+  <data name="WIPChartsExist" xml:space="preserve">
+    <value>You have work in progress or pending charts in your queue. Please complete them before requesting for a new chart.</value>
+  </data>
+</root>

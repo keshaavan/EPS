@@ -1,0 +1,394 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link type="text/css" rel="stylesheet" href="~/Styles/Site.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <link type="text/css" rel="stylesheet" href="~/Styles/Layout.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <link type="text/css" rel="stylesheet" href="~/Styles/WorkArea.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="~/Jquery/Edit-Datatable/media/css/themes/base/jquery-ui.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <link type="text/css" rel="stylesheet" href="Styles/Dialogbox.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <link type="text/css" rel="stylesheet" href="Styles/jquery.dataTables.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <link type="text/css" rel="stylesheet" href="Styles/chosen.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <link type="text/css" rel="stylesheet" href="Styles/jquery-ui.css?rel=<%= Common.getAssemblyBuildTime %>" />
+    <script type="text/javascript" src="Scripts/jquery-ui.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/jquery.jstree.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/chosen.jquery.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/jquery.dataTables.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/jquery.dataTables.editable.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/jquery.jeditable.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/jquery.validate.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/global.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/Common.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/CacheManager.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/Notification.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/ServiceBroker.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/SiteMaster.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/Home.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/jquery.flot.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/MasterData.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/UserCreation.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/ChartReallocation.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/ChartImport.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/Level1.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/Level2.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/Level3.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/DailyProductionSummary.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/ProductionStatus.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/ChartStatus.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/ClientChartDeallocation.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/AgingReport.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/PerformanceSummary.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript" src="Scripts/Invoice.js?rel=<%= Common.getAssemblyBuildTime %>"></script>
+    <script type="text/javascript">
+         var appUser = {
+             ClientReferenceLabel: "<%=Profile.ClientReferenceLabel %>",
+             IsAdmin: "<%=Profile.IsAdmin %>",
+             UserName: "<%=Profile.UserName %>",
+             LevelNumber: <%=Profile.LevelNumber %>,
+             ClientProjectId: <%=Profile.ClientProjectId %>
+        }
+
+         function showsubmenu(obj) {
+             if (obj.id != "aAdmin" && obj.id != "aChartAllocation" && obj.id != "aUserCreation" && obj.id != "aChartImport" && obj.id != "aChartReallocation" && obj.id != "aMasterData" &&
+                    obj.id != "aLevel1" && obj.id != "aLevel2" && obj.id != "aLevel3" && obj.id != "aReports" && obj.id !="aDailyProductionSummary" && obj.id !="aProductionStatus" && obj.id !="aChartStatusReport" &&
+                     obj.id !="aClientChartReallocation" && obj.id !="aAgingReport" && obj.id !="aPerformanceSummary" && obj.id !="aInvoiceReport" && obj.id !="aOtherReports" ) {
+            
+                 if ($('#AdminSubMenuItem').is(":visible"))
+                     $('#AdminSubMenuItem').slideUp();
+                 else if ($('#ChartAllocationSubMenuItem').is(":visible"))
+                     $('#ChartAllocationSubMenuItem').slideUp();
+                 else if ($('#ReportsSubMenuItem').is(":visible"))
+                     $('#ReportsSubMenuItem').slideUp();
+                 else if ($('#OtherReportsSubMenuItem').is(":visible"))
+                     $('#OtherReportsSubMenuItem').slideUp();
+             }
+             else if (obj.id == "aAdmin" ) {
+                 if ($('#AdminSubMenuItem').is(":visible"))
+                     $('#AdminSubMenuItem').slideUp();
+                 else {
+                     $('#AdminSubMenuItem').slideDown(250);
+                     $('#ChartAllocationSubMenuItem').slideUp();
+                     $('#ReportsSubMenuItem').slideUp();
+                     $('#OtherReportsSubMenuItem').slideUp();
+                     // Clear old highlights, if necessary
+                     $("#sidebar").find(".menuItemCurrent").removeClass("menuItemCurrent");
+
+                     // highlight 'Results' navigation item                
+                     $("#Admin").addClass("menuItemCurrent");
+                 }
+             }
+             //-----------------Chart Allocation------------
+             else if (obj.id == "aChartAllocation") {
+                 if ($('#ChartAllocationSubMenuItem').is(":visible"))
+                     $('#ChartAllocationSubMenuItem').slideUp();
+                 else {
+                     $('#ChartAllocationSubMenuItem').slideDown(250);
+                     $('#AdminSubMenuItem').slideUp();
+                     $('#ReportsSubMenuItem').slideUp();
+                     $('#OtherReportsSubMenuItem').slideUp();
+                     // Clear old highlights, if necessary
+                     $("#sidebar").find(".menuItemCurrent").removeClass("menuItemCurrent");
+
+                     // highlight 'Results' navigation item                
+                     $("#ChartAllocation").addClass("menuItemCurrent");
+                 }
+             }
+               //-----------------Reports------------
+             else if (obj.id == "aReports") {
+                 if ($('#ReportsSubMenuItem').is(":visible"))
+                     $('#ReportsSubMenuItem').slideUp();
+                 else {
+                     $('#ReportsSubMenuItem').slideDown(250);
+                     $('#ChartAllocationSubMenuItem').slideUp();
+                     $('#AdminSubMenuItem').slideUp();
+                     $('#OtherReportsSubMenuItem').slideUp();
+                     // Clear old highlights, if necessary
+                     $("#sidebar").find(".menuItemCurrent").removeClass("menuItemCurrent");
+
+                     // highlight 'Results' navigation item                
+                     $("#Reports").addClass("menuItemCurrent");
+                 }
+             }
+             //-----------------OtherReports------------
+             else if (obj.id == "aOtherReports") {
+                 if ($('#OtherReportsSubMenuItem').is(":visible"))
+                     $('#OtherReportsSubMenuItem').slideUp();
+                 else {
+                     $('#OtherReportsSubMenuItem').slideDown(250);
+                     $('#ReportsSubMenuItem').slideUp();
+                     $('#ChartAllocationSubMenuItem').slideUp();
+                     $('#AdminSubMenuItem').slideUp();
+                     // Clear old highlights, if necessary
+                     $("#sidebar").find(".menuItemCurrent").removeClass("menuItemCurrent");
+
+                     // highlight 'Results' navigation item                
+                     $("#OthersReports").addClass("menuItemCurrent");
+                 }
+             }
+         }
+    </script>
+</head>
+<body>
+    <div id="header-container">
+        <div id="header">
+            <div id="Logo">
+            </div>
+            <!--Logo-->
+            <div id="Login">
+                <div class="floatleft">
+                    <a id="changepasswordAnchor" style="color: #f0f0f0; cursor: pointer;">Change Password</a>
+                    &nbsp;|&nbsp;</div>
+                <div class="floatleft">
+                    Project:</div>
+                <div class="floatleft" style="padding-left: 3px; font-weight: bold;">
+                    <%=  Profile.Client%>&nbsp;-&nbsp;<%=  Profile.Project%>
+                    &nbsp;|&nbsp;</div>
+                Logged in as: <b>
+                    <%=  Profile.UserName  %>
+                </b>
+                <img id="imgLogout" src="images/panel_opened.png" alt="" class="btnopenmenu" />
+            </div>
+        </div>
+        <!--header-->
+    </div>
+    <!--header-container-->
+    <div id="Settingsmenu" class="loginMenu">
+        <img src="images/logout.png" alt="Logout" class="logouticon" />
+        <a id="logoutAnchor" class="alinklogout" style="color: #f0f0f0" href="<%= ResolveClientUrl("~/Logout.aspx")  %>">
+            Logout</a>
+    </div>
+    <!--Logout Container-->
+    <div class="divProcess hide" id="divProcessImage">
+        <img src="images/progressing.gif" alt="" />
+    </div>
+    <!--ProgressBar Container-->
+    <div id="page">
+        <div id="sidebar">
+            <div id="sidebarMainMenu">
+                <div class="menuHeader">
+                    FOCUS</div>
+                <!--Menu Header-->
+                <div class="menuItem" id="Home">
+                    <asp:Image ID="imghome" runat="server" ImageUrl="images/Home.png" AlternateText="Home"
+                        CssClass="menuItemIcon" />
+                    <a id="aHome" href="#Home.aspx" onclick="showsubmenu(this, 'aHome', '')">Home</a>
+                </div>
+                <!--Menu Item of Production-->
+                <div class="menuItem" id="Admin">
+                    <asp:Image ID="imgAdmin" runat="server" ImageUrl="images/Pprocess_2.png" AlternateText="Admin"
+                        CssClass="menuItemIcon" />
+                    <a id="aAdmin" style="cursor: pointer;" onclick="showsubmenu(this)">Admin</a>
+                </div>
+                <div id="AdminSubMenuItem" class="submenuItem" style="display: none;">
+                    <div class="menuItem" id="UserCreation">
+                        <asp:Image ID="ImgUserCreation" runat="server" ImageUrl="images/message.png" AlternateText="ApplyForLeave"
+                            CssClass="menuItemIcon" />
+                        <a id="aUserCreation" href="Admin/#UserCreation.aspx" onclick="showsubmenu(this)">User
+                            Details</a>
+                    </div>
+                    <div class="menuItem" id="ChartImport">
+                        <asp:Image ID="imgChartImport" runat="server" ImageUrl="images/xls.png" AlternateText="ChartImport"
+                            CssClass="menuItemIcon" />
+                        <a id="aChartImport" href="Admin/#ChartImport.aspx" onclick="showsubmenu(this)">Chart
+                            Import</a>
+                    </div>
+                    <div class="menuItem" id="ChartReallocation">
+                        <asp:Image ID="imgChartReallocation" runat="server" ImageUrl="images/results.png"
+                            AlternateText="ChartReallocation" CssClass="menuItemIcon" />
+                        <a id="aChartReallocation" href="Admin/#ChartReallocation.aspx" onclick="showsubmenu(this)">
+                            Chart Reallocation</a>
+                    </div>
+                    <div class="menuItem" id="ClientChartDeallocation" style="display: none;">
+                        <asp:Image ID="imgClientChartReallocation" runat="server" ImageUrl="images/results.png"
+                            AlternateText="Client Chart Reallocation" CssClass="menuItemIcon" />
+                        <a id="aClientChartReallocation" href="Admin/#ClientChartDeallocation.aspx" onclick="showsubmenu(this)">
+                            Client Chart Deallocation</a>
+                    </div>
+                    <div class="menuItem" id="MasterData" style="display: block;">
+                        <asp:Image ID="imgMasterData" runat="server" ImageUrl="images/data_backup.png" AlternateText="MasterData"
+                            CssClass="menuItemIcon" />
+                        <a id="aMasterData" href="Admin/#MasterData.aspx" onclick="showsubmenu(this)">Master
+                            Data</a>
+                    </div>
+                </div>
+                <div class="menuItem" id="ChartAllocation">
+                    <asp:Image ID="imgChartAllocation" runat="server" ImageUrl="images/Dept.png" AlternateText="ChartAllocation"
+                        CssClass="menuItemIcon" />
+                    <a id="aChartAllocation" style="cursor: pointer;" onclick="showsubmenu(this)">Chart
+                        Allocation</a>
+                </div>
+                <div id="ChartAllocationSubMenuItem" class="submenuItem" style="display: none;">
+                    <div class="menuItem" id="Level1">
+                        <asp:Image ID="imgLevel1" runat="server" ImageUrl="images/message.png" AlternateText="Level1"
+                            CssClass="menuItemIcon" />
+                        <a id="aLevel1" href="TaskAllocation/#Level1.aspx" onclick="showsubmenu(this)">Level
+                            1</a>
+                    </div>
+                    <div class="menuItem" id="Level2">
+                        <asp:Image ID="imgLevel2" runat="server" ImageUrl="images/message.png" AlternateText="Level2"
+                            CssClass="menuItemIcon" />
+                        <a id="aLevel2" href="TaskAllocation/#Level2.aspx" onclick="showsubmenu(this)">Level
+                            2</a>
+                    </div>
+                    <div class="menuItem" id="Level3">
+                        <asp:Image ID="imgLevel3" runat="server" ImageUrl="images/message.png" AlternateText="Level3"
+                            CssClass="menuItemIcon" />
+                        <a id="aLevel3" href="TaskAllocation/#Level3.aspx" onclick="showsubmenu(this)">Level
+                            3</a>
+                    </div>
+                </div>
+                <div class="menuItem" id="Reports" style="display: none;">
+                    <asp:Image ID="imgReports" runat="server" ImageUrl="images/Reportsshinechart.png"
+                        AlternateText="Reports" CssClass="menuItemIcon" />
+                    <a id="aReports" style="cursor: pointer;" onclick="showsubmenu(this)">Reports</a>
+                </div>
+                <div id="ReportsSubMenuItem" class="submenuItem" style="display: none;">
+                    <div class="menuItem" id="ChartStatusReport">
+                        <asp:Image ID="imgChartStatusReport" runat="server" ImageUrl="images/keystats.png"
+                            AlternateText="Chart Status" CssClass="menuItemIcon" />
+                        <a id="aChartStatusReport" href="Reports/#ChartStatus.aspx" onclick="showsubmenu(this)">
+                            Chart Status</a>
+                    </div>
+                    
+                    <div class="menuItem" id="ProductionStatus">
+                        <asp:Image ID="imgProductionStatus" runat="server" ImageUrl="images/Bar-chart-icon.png"
+                            AlternateText="Current Production Status" CssClass="menuItemIcon" />
+                        <a id="aProductionStatus" href="Reports/#ProductionStatus.aspx" onclick="showsubmenu(this)">
+                            Current Production Status</a>
+                    </div>
+                    <%-- <div class="menuItem" id="DailyProductionSummary">
+                        <asp:Image ID="imgDailyProductionSummary" runat="server" ImageUrl="images/CurrentproductionChart.png"
+                            AlternateText="Daily Production Summary" CssClass="menuItemIcon" />
+                        <a id="aDailyProductionSummary" href="Reports/#DailyProductionSummary.aspx" onclick="showsubmenu(this)">
+                            Daily Production Summary</a>
+                    </div>--%>
+                    <div class="menuItem" id="AgingReport">
+                        <asp:Image ID="imgAgingReport" runat="server" ImageUrl="images/pie-chart.png" AlternateText="Aging Report"
+                            CssClass="menuItemIcon" />
+                        <a id="aAgingReport" href="Reports/#AgingReport.aspx" onclick="showsubmenu(this)">Aging</a>
+                    </div>
+                    <div class="menuItem" id="InvoiceReport" style="display: none;">
+                        <asp:Image ID="imgInvoiceReport" runat="server" ImageUrl="images/CurrentproductionChart.png"
+                            AlternateText="Invoice" CssClass="menuItemIcon" />
+                        <a id="aInvoiceReport" href="Reports/#Invoice.aspx" onclick="showsubmenu(this)">Invoice
+                            Summary</a>
+                    </div>
+                </div>
+                <div class="menuItem" id="OthersReports">
+                    <asp:Image ID="imgOthers" runat="server" ImageUrl="images/Reportsshinechart.png"
+                        AlternateText="Other Reports" CssClass="menuItemIcon" />
+                    <a id="aOtherReports" style="cursor: pointer;" onclick="showsubmenu(this)">Other Reports</a>
+                </div>
+                <div id="OtherReportsSubMenuItem" class="submenuItem">
+                  <div class="menuItem" id="PerformanceSummary">
+                        <asp:Image ID="imgPerformanceSummary" runat="server" ImageUrl="images/curve-chart.png"
+                            AlternateText="PerformanceSummary" CssClass="menuItemIcon" />
+                        <a id="aPerformanceSummary" href="Reports/#PerformanceSummary.aspx" onclick="showsubmenu(this)">
+                            Performance Summary</a>
+                    </div>
+                    </div>
+                <!--Sub Menu Item for Results-->
+            </div>
+        </div>
+        <!--Side Left Navigation Bar-->
+        <div id="content">
+            <div id="content-header">
+                <div id="divWelcome">
+                </div>
+            </div>
+            <!--content-header -->
+            <div id="contentPayload">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--content-payload -->
+        </div>
+        <!--content-->
+    </div>
+    <!--page-->
+    <div id="ChangepasswordDialog" title="Change Password" style="display: none;">
+        <table cellpadding="0px" cellspacing="10px" style="height: 250px; width: 650px;">
+            <tr>
+                <td align="right" style="height: 5px; width: 10%;">
+                </td>
+                <td align="left" style="height: 5px; width: 20%;">
+                    <input type="hidden" placeholder="" name="Employeeid" id="Employeeid" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="height: 5px; width: 10%;">
+                </td>
+                <td align="left" style="height: 5px; width: 20%;">
+                    <input type="hidden" placeholder="" name="User Name" id="UserName" maxlength="25"
+                        class="text ui-widget-content ui-corner-all" readonly />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="height: 20px; width: 10%;">
+                    Old Password:
+                </td>
+                <td align="left" style="height: 20px; width: 20%;">
+                    <input type="password" placeholder="Enter Old Password" maxlength="25" name="oldpassword"
+                        id="oldpassword" class="text ui-widget-content ui-corner-all" tabindex="1" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="height: 20px; width: 10%;">
+                    New Password:
+                </td>
+                <td align="left" style="height: 20px; width: 20%;">
+                    <input type="password" placeholder="Enter New Password" tabindex="2" name="newpassword"
+                        id="newpassword" class="text ui-widget-content ui-corner-all" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="height: 20px; width: 10%;">
+                    Confirm New Password:
+                </td>
+                <td align="left" style="height: 20px; width: 20%;">
+                    <input type="password" placeholder="Enter Confirm New Password" tabindex="2" name="LastName"
+                        id="ConfirmNewPassword" class="text ui-widget-content ui-corner-all" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left" style="height: 20px; width: 10%;">
+                </td>
+                <td align="left" style="height: 20px; width: 20%;">
+                    <input id="btnUpdate" type="button" class="buttons buttons-gray" tabindex="8" value="Update"
+                        name="addNew" />
+                    <input id="btnReset" type="button" class="buttons buttons-gray" tabindex="9" value="Cancel" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer-container">
+        <div id="footer">
+        </div>
+        <!-- footer -->
+    </div>
+    <!-- footer-container -->
+    <div id="advBrowser" class="advBrowser">
+        <div id="advBrwoserMessage">
+            Oops we dont support old browsers, Click to upgrade advanced browser of your choice.
+        </div>
+        <a href="http://www.google.com/chrome/" title="Chrome" target="_blank">
+            <img alt="Chrome" src="images/Chrome.png" /></a> <a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie/"
+                title="Internet Explorer" target="_blank">
+                <img alt="Internet Explorer" src="images/IE.png" />
+            </a><a href="http://www.mozilla.com/firefox/" title="Firefox" target="_blank">
+                <img alt="Firefox" src="images/Firefox.png" /></a> <a href="http://www.apple.com/safari/"
+                    title="Safari" target="_blank">
+                    <img alt="Safari" src="images/Safari.png" /></a> <a href="http://www.opera.com/browser/download/"
+                        title="Opera" target="_blank">
+                        <img alt="Opera" src="images/Opera.png" /></a>
+    </div>
+    <!-- advBrowser-container -->
+</body>
+</html>
